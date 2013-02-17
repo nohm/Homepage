@@ -45,7 +45,7 @@ function initCorners() {
 
 // RANDOM AVATAR //
 var avImages = [ 'avatar.png', 'avatar (1).jpg', 'avatar (2).jpg', 'avatar (3).jpg', 'avatar (4).jpg', 'avatar (5).jpg', 'avatar (6).jpg',
-                 'avatar (7).jpg', 'avatar (8).jpg', 'avatar (1).gif' ];
+                 'avatar (7).jpg', 'avatar (8).jpg', 'avatar (1).gif', 'avatar (2).png' ];
 var p = avImages.length;
 var avPreBuffer = new Array();
 for (i = 0; i < p; i++){
