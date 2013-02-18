@@ -67,16 +67,17 @@ a:hover, a:focus {
     transition: color 0.3s ease;
 }
                 
-.searchBar { 
+.searchBar {
 	width:275px;
 	height:20px;
 	margin-top:10px;
-	padding: 2px;
+	padding: 0 0 2px 2px;
     background-image: url('../img/bar.png');
-	border-radius: 1px solid #dfdfdf;
+    background-size: 99% 100%;
+    background-repeat:no-repeat;
 }
 
-.searchBox {
+.searchBox, .searchButton {
 	color:#dfdfdf;
 	-webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
@@ -85,13 +86,34 @@ a:hover, a:focus {
     transition: color 0.3s ease;
 }
 
-.searchBox:hover {
+.searchBox:hover, .searchButton:hover {
 	color:#f7f7f7;
 	-webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
     -ms-transition: color 0.3s ease;
     transition: color 0.3s ease;
+}
+
+.searchButton {
+	margin: 0 2px 0 2px;
+	background: rgba(5, 5, 5, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.0); /* 0.0 opacity, still shows.. */
+	-webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+}
+
+.searchButton:hover {
+	background: rgba(25, 25, 25, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.0); /* 0.0 opacity, still shows.. */
+	-webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 /*MOBILE*/
@@ -109,5 +131,4 @@ a:hover, a:focus {
     .content {
         width: 100%;
     }
-}
 }

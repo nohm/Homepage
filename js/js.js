@@ -23,7 +23,6 @@ function updateWeather() {
     var u = 'c';
     var query = "SELECT * FROM weather.forecast WHERE woeid IN (SELECT woeid FROM geo.places WHERE text='" + loc + "') AND u='" + u + "'";
     var url = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(query) + '&format=json';
-    var weather = "";
     
     $.ajax({
         dataType: 'jsonp', // this automatically disables cache too
