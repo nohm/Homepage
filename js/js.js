@@ -15,6 +15,28 @@
 addEvent(window, 'load', initCorners); 	// input to fix is set in initcorners.js
 addEvent(window, 'load', startTime); 	// shows the clock
 addEvent(window, 'load', showAvatar); 	// set the avatar
+addEvent(window, 'load', updateWeather);// get the weather
+
+// WEATHER //
+function updateWeather() {
+    var loc = 'almelo';
+    var u = 'c';
+    var query = "SELECT * FROM weather.forecast WHERE woeid IN (SELECT woeid FROM geo.places WHERE text='" + loc + "') AND u='" + u + "'";
+    var url = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(query) + '&format=json';
+    var weather = "";
+    
+    $.ajax({
+        dataType: 'jsonp', // this automatically disables cache too
+        url: url,
+        success: function(data) {
+            var info = data.query.results.channel.item.condition;
+            document.getElementById('weather').innerHTML = info.text + " " + info.temp + '&deg;' + (u.toUpperCase());
+        },
+    	error: function() {
+            document.getElementById('weather').innerHTML = "";
+        }
+    });
+}
 
 // CLOCK/DATE //
 // Needed for full date // var monthNames=[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
