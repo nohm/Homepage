@@ -44,8 +44,9 @@ function initCorners() {
 }
 
 // RANDOM AVATAR //
-var avImages = [ 'avatar.png', 'avatar (1).jpg', 'avatar (2).jpg', 'avatar (3).jpg', 'avatar (4).jpg', 'avatar (5).jpg', 'avatar (6).jpg',
-                 'avatar (7).jpg', 'avatar (8).jpg', 'avatar (1).gif', 'avatar (2).png' ];
+var avImages = [ 'png_av1.png', 'png_av2.png',
+                 'jpg_av1.jpg', 'jpg_av2.jpg', 'jpg_av3.jpg', 'jpg_av4.jpg', 'jpg_av6.jpg', 'jpg_av7.jpg', 'jpg_av8.jpg', 'jpg_av9.jpg',
+                 'gif_av1.gif', 'gif_av2.gif' ];
 var p = avImages.length;
 var avPreBuffer = new Array();
 for (i = 0; i < p; i++){
