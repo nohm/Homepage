@@ -19,7 +19,7 @@ addEvent(window, 'load', updateWeather);// get the weather
 
 // WEATHER //
 function updateWeather() {
-    var loc = 'almelo';
+    var loc = 'enschede';
     var u = 'c';
     var query = "SELECT * FROM weather.forecast WHERE woeid IN (SELECT woeid FROM geo.places WHERE text='" + loc + "') AND u='" + u + "'";
     var url = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(query) + '&format=json';
