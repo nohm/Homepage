@@ -68,13 +68,16 @@ a:hover, a:focus {
 }
                 
 .searchBar {
-	width:275px;
+	width:280px;
 	height:20px;
 	margin-top:10px;
-	padding: 0 0 2px 2px;
-    background-image: url('../img/bar.png');
-    background-size: 99% 100%;
-    background-repeat:no-repeat;
+}
+
+.searchBox {
+	margin: 0;
+	padding: 5px 0 5px 2px;
+	background-color: rgba(10, 10, 10, 0.2);
+	border: 0;
 }
 
 .searchBox, .searchButton {
@@ -96,7 +99,8 @@ a:hover, a:focus {
 }
 
 .searchButton {
-	margin: 0 2px 0 2px;
+	margin-left: -4px;
+	padding: 2px 5px 2px 5px;
 	background: rgba(5, 5, 5, 0.3);
 	border: 2px solid rgba(0, 0, 0, 0.0); /* 0.0 opacity, still shows.. */
 	-webkit-transition: background 0.3s ease;
