@@ -26,6 +26,7 @@ function updateWeather() {
     $.ajax({
         dataType: 'jsonp', // this automatically disables cache too
         url: url,
+        timeout: 5000,
         success: function(data) {
             var info = data.query.results.channel.item.condition;
             document.getElementById('weather').innerHTML = info.text + " " + info.temp + '&deg;' + (u.toUpperCase());
