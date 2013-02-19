@@ -19,22 +19,28 @@ addEvent(window, 'load', updateWeather);// get the weather
 // WEATHER //
 function updateWeather() {
     var loc = 'enschede';
-    var u = 'c';
-    var query = "SELECT * FROM weather.forecast WHERE woeid IN (SELECT woeid FROM geo.places WHERE text='" + loc + "') AND u='" + u + "'";
-    var url = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(query) + '&format=json';
+    //var u = 'c';
+    //var query = "SELECT * FROM weather.forecast WHERE woeid IN (SELECT woeid FROM geo.places WHERE text='" + loc + "') AND u='" + u + "'";
+    //var url = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(query) + '&format=json';
+    var url = 'http://api.wunderground.com/api/bf6fcb121000e936/geolookup/conditions/q/' + encodeURIComponent(loc) + '.json';
     
     $.ajax({
         dataType: 'jsonp', // this automatically disables cache too
         url: url,
         timeout: 5000,
         success: function(data) {
-            var info = data.query.results.channel.item.condition;
-            document.getElementById('weather').innerHTML = info.text + " " + info.temp + '&deg;' + (u.toUpperCase());
+        	 var location = data['location']['city'];
+        	 var type = data['current_observation']['weather'];
+        	 var temp_c = data['current_observation']['temp_c'];
+        	 document.getElementById('weather').innerHTML = location + '<br/>' + type + '<br/>' + temp_c + '&deg;C';
+        	//var info = data.query.results.channel.item.condition;
+            //document.getElementById('weather').innerHTML = info.text + " " + info.temp + '&deg;' + (u.toUpperCase());
         },
     	error: function() {
             document.getElementById('weather').innerHTML = "";
         }
     });
+    t = setTimeout('updateWeather()',900000);
 }
 
 // CLOCK/DATE //

@@ -1,6 +1,8 @@
 Homepage
 ========
 
+WARNING: Made for firefox, fonts & search-button look weird in chrome atm.
+
 Still working on everything, especially this readme..
 
 
