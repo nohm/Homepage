@@ -13,6 +13,7 @@ html {
     background-image:url("../img/bg.jpg");
     background-size: auto, cover;
 }
+
 body {
     margin: 2%;
 }
@@ -35,17 +36,24 @@ body {
 }
 
 /*TYPOGRAPHY*/
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/OpenSans-Bold.ttf");
+}
+
+
 #date, #weather {
-	font: bold 2em/0.8 "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font: bold 2em/0.8 'Open Sans', sans-serif; 
 	color: #f3f3f3;
 	text-shadow: 0px -1px 3px rgba(20, 20, 20, 0.6);
 	margin-top: 40px;
+	line-height: 105%;
 }
 
 a, a:visited {
 	display: block;
 	text-decoration: none;
-	font: bold 4em/0.8 "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font: bold 4em/0.8 'Open Sans', sans-serif; 
 	margin: 5px;
 	margin-left: 0;
 	color: #f3f3f3;
@@ -66,7 +74,8 @@ a:hover, a:focus {
     -ms-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
-                
+
+/* SEARCH */            
 .searchBar {
 	width:280px;
 	height:20px;
@@ -100,9 +109,9 @@ a:hover, a:focus {
 
 .searchButton {
 	margin-left: -4px;
-	padding: 2px 5px 2px 5px;
+	padding: 4px 5px 4px 5px;
 	background: rgba(5, 5, 5, 0.3);
-	border: 2px solid rgba(0, 0, 0, 0.0); /* 0.0 opacity, still shows.. */
+	border: none;
 	-webkit-transition: background 0.3s ease;
     -moz-transition: background 0.3s ease;
     -o-transition: background 0.3s ease;
@@ -112,7 +121,6 @@ a:hover, a:focus {
 
 .searchButton:hover {
 	background: rgba(25, 25, 25, 0.3);
-	border: 2px solid rgba(0, 0, 0, 0.0); /* 0.0 opacity, still shows.. */
 	-webkit-transition: background 0.3s ease;
     -moz-transition: background 0.3s ease;
     -o-transition: background 0.3s ease;
