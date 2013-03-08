@@ -1,116 +1,33 @@
 @charset "utf-8";
-/* anim.css */
-/*                    _                                     
- ___ _ __   __ _  ___| | __  _    ___ _ __ __ _ _   _  __ _ 
-/ __| '_ \ / _` |/ __| |/ / (_)  / _ \ '__/ _` | | | |/ _` |
-\__ \ | | | (_| | (__|   <   _  |  __/ | | (_| | |_| | (_| |
-|___/_| |_|\__,_|\___|_|\_\ (_)  \___|_|  \__,_|\__, |\__,_|
-                                                |___/          
- */
 
-/*ANIMATION*/
-/*
-Animate.css - http://daneden.me/animate
-LICENSED UNDER THE  MIT LICENSE (MIT)
-
-Copyright (c) 2012 Dan Eden
-*/
-.animated {
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -ms-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}	
+	100% {opacity: 1;}
 }
 
-.animated.hinge {
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
+@-moz-keyframes fadeIn {
+    0% {opacity: 0;}	
+	100% {opacity: 1;}
 }
 
-@-webkit-keyframes bounceInDown {
-    0% {
-        -webkit-transform: translateY(-2000px);
-    }
-    
-    60% {
-        -webkit-transform: translateY(30px);
-    }
-    
-    80% {
-        -webkit-transform: translateY(-10px);
-    }
-    
-    100% {
-        -webkit-transform: translateY(0);
-    }
+@-o-keyframes fadeIn {
+    0% {opacity: 0;}	
+	100% {opacity: 1;}
 }
 
-@-moz-keyframes bounceInDown {
-    0% {
-        -moz-transform: translateY(-2000px);
-    }
-    
-    60% {
-        -moz-transform: translateY(30px);
-    }
-    
-    80% {
-        -moz-transform: translateY(-10px);
-    }
-    
-    100% {
-        -moz-transform: translateY(0);
-    }
+@keyframes fadeIn {
+    0% {opacity: 0;}	
+	100% {opacity: 1;}
 }
 
-@-o-keyframes bounceInDown {
-    0% {
-        -o-transform: translateY(-2000px);
-    }
-    
-    60% {
-        -o-transform: translateY(30px);
-    }
-    
-    80% {
-        -o-transform: translateY(-10px);
-    }
-    
-    100% {
-        -o-transform: translateY(0);
-    }
-}
-
-@keyframes bounceInDown {
-    0% {
-        transform: translateY(-2000px);
-    }
-    
-    60% {
-        transform: translateY(30px);
-    }
-    
-    80% {
-        transform: translateY(-10px);
-    }
-    
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.bounceInDown {
-    -webkit-animation-name: bounceInDown;
-    -moz-animation-name: bounceInDown;
-    -o-animation-name: bounceInDown;
-    animation-name: bounceInDown;
+.fadeIn {
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
