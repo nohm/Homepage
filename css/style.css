@@ -6,20 +6,19 @@
 }
 
 body {
-    background-color: #414141;
     background-image:url("../img/bg.jpg");
     background-size: auto, cover;	
-    color: #b2b2b2;
+    color: #414141;
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
 }
 
 .content {
-    background-color: #454545;
+    background-color: rgba(255,255,255,0.95);
     margin: 10% auto 0% auto;
     width: 360px;
     box-shadow: 0 10px 100px #e5cbb4;
-    border: 1px solid #414141;
+    border: 1px solid rgba(5, 5, 5, 0.1);
 }
 
 .c {
@@ -30,9 +29,19 @@ body {
     text-align: center;
 }
 
-.cb {
+.logo {
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	min-height: 100px;
+}
+
+.cb, .logo {
 	margin: 15px 0 15px 0;
-    background-color: #414141;
+}
+
+.cb {
+	background-color: rgba(255,255,255,1);
+	box-shadow: 1px 2px 1px rgba(5, 5, 5, 0.1);
 }
 
 p {
@@ -45,31 +54,35 @@ ul,ol,dl {
 
 a, #clock {
     text-decoration: none;
-    color: #bfbfbf;
+    color: #414141;
     font-weight: 300;
     font-size: 20px;
 }
 
 .searchBox, .searchButton {
-	color: #b2b2b2;
 	border: none;
 }
 
 .searchBox {
+	color: #414141;
 	margin: 0;
 	padding: 5px 0 5px 2px;
 	background: none;
 }
 
 .searchButton {
+	color: #414141;
 	margin-left: -3px;
 	padding: 4px 15px 4px 15px;
-	background: rgba(5, 5, 5, 0.3);
+	background: rgba(5, 5, 5, 0.1);
 }
 
 @media handheld,only screen and (max-width: 800px) {
+	.logo {
+		background-image:url("../img/logo-small.png");
+	}
+	
     .content {
         width: 180px;
-        margin-left: 5%;
     }
 }
