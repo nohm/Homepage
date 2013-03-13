@@ -76,8 +76,7 @@ a, #clock {
 	padding: 4px 15px 4px 15px;
 	background: rgba(5, 5, 5, 0.1);
 }
-
-@media handheld,only screen and (max-width: 800px) {
+@media handheld,only screen and (max-width: 400px) {
 	.logo {
 		background-image:url("../img/logo-small.png");
 	}
