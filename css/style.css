@@ -6,8 +6,7 @@
 }
 
 body {
-    background-image:url("../img/bg.jpg");
-    background-size: auto, cover;	
+	background: url('../img/bg.jpg') no-repeat center center fixed;
     color: #414141;
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
