@@ -1,0 +1,86 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/OpenSans-Bold.ttf");
+}
+
+body {
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+    color: #414141;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+}
+
+.content {
+    background-color: rgba(255,255,255,0.95);
+    margin: 10% auto 0% auto;
+    width: 360px;
+    box-shadow: 0 10px 100px #e5cbb4;
+    border: 1px solid rgba(5, 5, 5, 0.1);
+}
+
+.c {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+.logo {
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	min-height: 100px;
+}
+
+.cb, .logo {
+	margin: 15px 0 15px 0;
+}
+
+.cb {
+	background-color: rgba(255,255,255,1);
+	box-shadow: 1px 2px 1px rgba(5, 5, 5, 0.1);
+}
+
+p {
+    font-weight: 400;
+}
+
+ul,ol,dl {
+    list-style-type: none;
+}
+
+a, #clock {
+    text-decoration: none;
+    color: #414141;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.searchBox, .searchButton {
+	border: none;
+}
+
+.searchBox {
+	color: #414141;
+	margin: 0;
+	padding: 5px 0 5px 2px;
+	background: none;
+}
+
+.searchButton {
+	color: #414141;
+	margin-left: -2px;
+	padding: 4px 15px 4px 15px;
+	background: rgba(5, 5, 5, 0.1);
+}
+@media handheld,only screen and (max-width: 400px) {
+	.logo {
+		background-image:url("../img/logo-small.png");
+	}
+	
+    .content {
+        width: 180px;
+    }
+}

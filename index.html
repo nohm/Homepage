@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Eraya ✓ -->
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<title>Startpage</title>
+<head>
+	<!-- Eraya ✓ -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Startpage</title>
 
-		<link href="img/icon.png" rel="icon" type="image/png" />
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<script src="js/js.js" type="text/javascript"></script>
-		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	</head>
+	<!--<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>-->
 
-	<body>
-		<article class="content">
-			<section class="c">
-				<section class="logo">
-					<!-- Logo is set by css. -->
-				</section>
-				
-				<section class="cb">
-					<section id="clock">JS.</section>
-				</section>
-				
-				<section class="cb">
-					<a href="http://leren.saxion.nl/">School</a><br />
-					<a href="https://mail.google.com/mail/?shva=1#inbox">Mail</a><br />
-					<a href="https://www.google.com/calendar/render?tab=mc&amp;pli=1">Calendar</a><br />
-					<a href="http://pastie.org/">Pastie</a><br />
-					<a href="https://github.com/">GitHub</a><br />
-					<a href="http://gps-buddy.com/">GPS</a><br />
-					<a href="http://projecteuler.net/">Euler</a><br />
-					<a href="http://nu.nl/">G-News</a><br />
-					<a href="https://news.ycombinator.com/">H-News</a><br />
-					<a href="http://www.feedly.com/">Feedly</a><br />
-				</section>
-			
-	            <section class="cb">
-					<form method="get" action="https://encrypted.google.com/search?q=">
-						<input type="text" class="searchBox" name="q" size="35" placeholder="Search..." autofocus/>
-						<input type="submit" class="searchButton" value="Go"/>
-					</form>
-	            </section>
-            </section>
-		</article>
-	</body>
+	<link href="img/icon.png" rel="icon" type="image/png" />
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!--<script src="js/js.js" type="text/javascript"></script>-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+		<div id="tabbed-interface">
+
+			<ul>
+				<li id="n1" class="block">
+					<a href="http://leren.saxion.nl/">
+						<span class="fontawesome-suitcase"></span>
+						<p>School</p>
+					</a>
+				</li>
+				<li id="n2" class="block">
+					<a href="https://mail.google.com/mail/?shva=1#inbox">
+						<span class="fontawesome-envelope"></span>
+						<p>Mail</p>
+					</a>
+				</li>
+				<li id="n3" class="block">
+					<a href="https://www.google.com/calendar/render?tab=mc&amp;pli=1">
+						<span class="fontawesome-calendar"></span>
+						<p>Calendar</p>
+					</a>
+				</li>
+				<li id="n4" class="block">
+					<a href="hhttp://yoleoreader.com/articles">
+						<span class="fontawesome-rss"></span>
+						<p>Yoleo</p>
+					</a>
+				</li>
+				<li id="n5" class="block">
+					<a href="https://github.com/">
+						<span class="fontawesome-github"></span>
+						<p>GitHub</p>
+					</a>
+				</li>
+				<li id="n6" class="block">
+					<a href="http://gps-buddy.com/">
+						<span class="fontawesome-map-marker"></span>
+						<p>GPS-Buddy</p>
+					</a>
+				</li>
+				<li id="n7" class="block">
+					<a href="http://nu.nl/">
+						<span class="fontawesome-list-alt"></span>
+						<p>Nu.nl</p>
+					</a>
+				</li>
+				<li id="n8" class="block">
+					<a href="https://news.ycombinator.com/">
+						<span class="fontawesome-bar-chart"></span>
+						<p>Hacker News</p>
+					</a>
+				</li>
+				<li id="n9" class="block">
+					<a href="http://guildwars2guru.com/">
+						<span class="fontawesome-laptop"></span>
+						<p>GW2Guru</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+</body>
 </html>
