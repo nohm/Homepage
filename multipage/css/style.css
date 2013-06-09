@@ -95,7 +95,9 @@ body {
 
 /* Nav buttons */
 #nav-left, #nav-right {
-  background: rgba(0,0,0,0.4);
+  -webkit-transition: all ease-out .3s;
+  -o-transition: all ease-out .3s;
+  transition: all ease-out .3s;
   position: fixed;
   top: 0;
   height: 100%;
