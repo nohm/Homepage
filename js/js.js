@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+	// Read the config and make the elements
+	// Need to clean this dirty hacking.
+	for (var i = 0; i < config.pages.length; i++) {
+		var page = config.pages[i];
+		var pageId = 'page' + (i + 1);
+		$('body').append('<div class="tabbed-interface" id="' + pageId + '"></div>');
+		$('#' + pageId).append('<ul id="table-' + pageId + '"></ul>');
+
+		for (var j = 0; j < page.blocks.length; j++) {
+			var block = page.blocks[j];
+			$('#table-' + pageId).append(
+				'<li class="block n' + (j + 1) + '">' + 
+					'<a href="' + block.link + '">' +
+						'<span class="' + block.icon + '"></span>' +
+						'<p>' + block.label + '</p>'+
+					'</a>' +
+				'</li>'
+			);
+		}
+	}
+
 	// Random background image
 	// Add files to img/ and add the filenames to the array
 	var images = [
