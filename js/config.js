@@ -2,7 +2,8 @@
 var images = [
 	'1.jpg',
 	'2.jpg',
-	'3.jpg'
+	'3.jpg',
+	'4.jpg'
 ];
 
 // Add tabs here (max 9 per page) to show on the page
