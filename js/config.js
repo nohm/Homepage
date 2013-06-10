@@ -1,4 +1,4 @@
-// Add files to img/ and add the filenames to the array
+// Add files to img/bg/ and add the filenames
 var images = [
 	'1.jpg',
 	'2.jpg',
