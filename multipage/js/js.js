@@ -29,17 +29,17 @@ $(document).ready(function() {
 
 	// Rotate left on nav-left
 	$('#nav-left').click(function() {
-		rotate(shownPage, (shownPage - 1 == 0) ? pages.length : shownPage - 1);
+		rotate((shownPage - 1 == 0) ? pages.length : shownPage - 1);
 	});
 
 	// Rotate right on nav-right
 	$('#nav-right').click(function() {
-		rotate(shownPage, (shownPage + 1 > pages.length) ? 1 : shownPage + 1);
+		rotate((shownPage + 1 > pages.length) ? 1 : shownPage + 1);
 	});
 
 	// Rotates the pages from > to
-	function rotate(from, to) {
-		$('#' + pages[from - 1].id).fadeOut(fadespeed, function() {
+	function rotate(to) {
+		$('#' + pages[shownPage - 1].id).fadeOut(fadespeed, function() {
 			$('#' + pages[to - 1].id).fadeIn();
 		});
 		shownPage = to;
