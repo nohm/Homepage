@@ -5,8 +5,7 @@ $(document).ready(function() {
 	for (var i = 0; i < config.pages.length; i++) {
 		var page = config.pages[i];
 		var pageId = 'page' + (i + 1);
-		$('body').append('<div class="tabbed-interface" id="' + pageId + '"></div>');
-		$('#' + pageId).append('<ul id="table-' + pageId + '"></ul>');
+		$('body').append('<div class="tabbed-interface" id="' + pageId + '"><ul id="table-' + pageId + '"></ul></div>');
 
 		for (var j = 0; j < page.blocks.length; j++) {
 			var block = page.blocks[j];
