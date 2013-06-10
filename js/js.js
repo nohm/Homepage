@@ -21,10 +21,6 @@ $(document).ready(function() {
 	}
 
 	// Random background image
-	// Add files to img/ and add the filenames to the array
-	var images = [
-    	'1.jpg','2.jpg','3.jpg'
-  	];
   	// Picks a random background image and sets it
 	$('body').css({
 		'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'
