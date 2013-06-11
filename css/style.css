@@ -13,6 +13,7 @@
 html,
 body {
   background-size: auto, cover;
+  background-position: center;
   margin: 0 auto;
   padding: 0;
   height: 100%;
