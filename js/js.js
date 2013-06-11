@@ -9,14 +9,20 @@ $(document).ready(function() {
 
 		for (var j = 0; j < page.blocks.length; j++) {
 			var block = page.blocks[j];
+			var blockId = pageId + '_block' + (j + 1);
 			$('#' + pageId).append(
-				'<div>' + 
+				'<div id="' + blockId + '">' + 
 					'<a href="' + block.link + '">' +
 						'<span class="' + block.icon + '"></span>' +
 						'<p>' + block.label + '</p>'+
 					'</a>' +
 				'</div>'
 			);
+			// Set the height/width according to the config
+			$('#' + blockId).css({
+				'height': (100 / page.gridY) + '%',
+				'width': (100 / page.gridX) + '%'
+			});
 		}
 	}
 

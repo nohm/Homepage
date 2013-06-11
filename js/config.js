@@ -5,12 +5,14 @@ var config = {
 		'1.jpg',
 		'2.jpg',
 		'3.jpg',
+		'4.jpg',
 		'5.jpg',
-		'7.jpg',
 		'8.jpg'
 	],
 	"pages": [
 		{
+			"gridX": 3,
+			"gridY": 3,
 			"blocks": [
 				{
 					"icon": "fontawesome-suitcase",
@@ -60,6 +62,8 @@ var config = {
 			]
 		},
 		{
+			"gridX": 3,
+			"gridY": 3,
 			"blocks": [
 				{
 					"icon": "fontawesome-laptop",

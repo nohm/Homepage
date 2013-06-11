@@ -35,8 +35,6 @@ body {
   text-align: center;
   float: left; 
   position: relative;
-  height: 33.33333%;
-  width: 33.33333%;
 }
 
 .tabbed-interface div a {
