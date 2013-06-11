@@ -62,8 +62,8 @@ var config = {
 			]
 		},
 		{
-			"gridX": 3,
-			"gridY": 3,
+			"gridX": 2,
+			"gridY": 2,
 			"blocks": [
 				{
 					"icon": "fontawesome-laptop",
