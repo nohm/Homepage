@@ -5,17 +5,17 @@ $(document).ready(function() {
 	for (var i = 0; i < config.pages.length; i++) {
 		var page = config.pages[i];
 		var pageId = 'page' + (i + 1);
-		$('body').append('<div class="tabbed-interface" id="' + pageId + '"><ul id="table-' + pageId + '"></ul></div>');
+		$('body').append('<div class="tabbed-interface" id="' + pageId + '"></div>');
 
 		for (var j = 0; j < page.blocks.length; j++) {
 			var block = page.blocks[j];
-			$('#table-' + pageId).append(
-				'<li class="block n' + (j + 1) + '">' + 
+			$('#' + pageId).append(
+				'<div>' + 
 					'<a href="' + block.link + '">' +
 						'<span class="' + block.icon + '"></span>' +
 						'<p>' + block.label + '</p>'+
 					'</a>' +
-				'</li>'
+				'</div>'
 			);
 		}
 	}

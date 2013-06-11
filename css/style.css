@@ -3,11 +3,13 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300);
 
 /* fontawesome */
+
 [class*=fontawesome-]:before {
-  font-family: FontAwesome, sans-serif
+  font-family: FontAwesome, sans-serif;
 }
 
 /* Body style */
+
 html,
 body {
   background-size: auto, cover;
@@ -21,28 +23,33 @@ body {
 }
 
 /* Main style */
-.tabbed-interface {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-top: 0;
-}
 
-.tabbed-interface ul {
-  list-style: none;
-  width: 95%;
+.tabbed-interface {
+  width: 90%;
   height: 90%;
   margin: 0 auto;
   margin-top: 2.5%;
+  overflow: hidden;
 }
 
-.tabbed-interface ul li {
-  width: 31%;
-  height: 31%;
-  display: inline-block;
-  margin: 10px;
+.tabbed-interface div {
   text-align: center;
+  float: left; 
+  position: relative;
+  height: 33.33333%;
+  width: 33.33333%;
+}
+
+.tabbed-interface div a {
+  display: inline-block;
+  text-decoration: none;
+  height: 95%;
+  width: 95%;
+  margin-top: 2.5%;
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  line-height: 1.3em;
   -webkit-transition: all ease-out .3s;
   -o-transition: all ease-out .3s;
   transition: all ease-out .3s;
@@ -53,18 +60,7 @@ body {
   cursor: pointer;
 }
 
-.tabbed-interface ul li a {
-  display: inline-block;
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  color: #FFF;
-  text-align: center
-  line-height: 1.3em;
-}
-
-.tabbed-interface ul li p {
+.tabbed-interface div p {
   text-decoration: none;
   color: #FFF;
   font-size: 1.1em;
@@ -73,27 +69,28 @@ body {
   left: 50%;
   text-transform: uppercase;
   position: absolute;
-  top: 54%;
+  top: 58%;
   text-align: center;
   width: 100%;
-  margin: 0 0 0 -50%
+  margin: 0 0 0 -50%;
 }
 
-.tabbed-interface ul li a span {
+.tabbed-interface div a span {
   font-size: 2.3em;
   position: absolute;
-  top: 28%;
+  top: 32%;
   left: 50%;
   width: 80%;
-  margin: 0 0 0 -40%
+  margin: 0 0 0 -40%;
 }
 
 /* Text Selection */
+
 ::selection {
   background: rgba(255,255,255,0.4);
 }
 
-::-moz-selection{
+::-moz-selection {
   background: rgba(255,255,255,0.4);
 }
 
@@ -102,7 +99,9 @@ body {
 }
 
 /* Nav buttons */
-#nav-left, #nav-right {
+
+#nav-left,
+#nav-right {
   -webkit-transition: all ease-out .3s;
   -o-transition: all ease-out .3s;
   transition: all ease-out .3s;
@@ -114,7 +113,8 @@ body {
   z-index: 10;
 }
 
-#nav-left span, #nav-right span {
+#nav-left span,
+#nav-right span {
   text-decoration: none;
   color: #FFF;
   font-size: 2.3em;
@@ -139,48 +139,64 @@ body {
 }
 
 /* Block colors */
-.block {
+
+.block, .tabbed-interface div a {
   background: rgba(0,0,0,0.4);
 }
 
-.block:hover {
+.block:hover, .tabbed-interface div a:hover {
   background: rgba(0,0,0,0.6);
   font-size: 1.2em;
-}
-
-/* Main block style */
-.tabbed-interface>div {
-  margin: 0;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  padding-left: 0;
-  color: #FFF;
-  font-weight: 300;
-  position: absolute;
-  z-index: 10
-}
+} 
 
 /* Resize text */
+
 @media screen and (max-height: 568px) {
   .tabbed-interface ul li p {
     font-size: 1em;
+    top: 58%;
   }
 
   .tabbed-interface ul li a span {
     font-size: 2.3em;
+    top: 22%;
   }
 }
 
 @media screen and (max-height: 341px) {
   .tabbed-interface ul li p {
     font-size: 1em;
+    top: 67%;
   }
 
   .tabbed-interface ul li a span {
     font-size: 2.3em;
+    top: 6%;
+  }
+}
+
+/* Resize margins */
+
+@media screen and (max-width: 1000px) {
+  .tabbed-interface ul {
+    margin: 0 0 0 -46%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .tabbed-interface ul {
+    margin: 0 0 0 -47%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabbed-interface ul {
+    margin: 0 0 0 -48%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .tabbed-interface ul {
+    margin: 0 0 0 -49%;
   }
 }
