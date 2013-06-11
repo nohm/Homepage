@@ -23,7 +23,7 @@ $(document).ready(function() {
 	// Random background image
   	// Picks a random background image and sets it
 	$('body').css({
-		'background-image': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ')'
+		'background-image': 'url(img/bg/' + config.images[Math.floor(Math.random() * config.images.length)] + ')'
 	});
 
 	// Page rotation

@@ -1,13 +1,16 @@
 // Add files to img/bg/ and add the filenames
-var images = [
-	'1.jpg',
-	'2.jpg',
-	'3.jpg',
-	'4.jpg'
-];
-
 // Add tabs here (max 9 per page) to show on the page
 var config = {
+	"images": [
+		'1.jpg',
+		'2.jpg',
+		'3.jpg',
+		'4.jpg',
+		'5.jpg',
+		'6.jpg',
+		'7.jpg',
+		'8.jpg'
+	],
 	"pages": [
 		{
 			"blocks": [
@@ -74,6 +77,11 @@ var config = {
 					"icon": "fontawesome-play",
 					"label": "Last.fm",
 					"link": "http://last.fm"
+				},
+				{
+					"icon": "fontawesome-film",
+					"label": "Tinychat",
+					"link": "http://tinychat.com/haremchat"
 				}
 			]
 		}

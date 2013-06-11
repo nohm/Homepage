@@ -27,23 +27,21 @@ body {
   margin: 0 auto;
   padding-left: 0;
   padding-top: 0;
-  position: relative
 }
 
 .tabbed-interface ul {
   list-style: none;
-  width: 90%;
+  width: 95%;
   height: 90%;
-  position: absolute;
-  margin: 0 0 0 -45%;
-  left: 48%;
-  top: 5%
+  margin: 0 auto;
+  margin-top: 2.5%;
 }
 
 .tabbed-interface ul li {
   width: 31%;
   height: 31%;
-  position: absolute;
+  display: inline-block;
+  margin: 10px;
   text-align: center;
   -webkit-transition: all ease-out .3s;
   -o-transition: all ease-out .3s;
@@ -90,6 +88,19 @@ body {
   margin: 0 0 0 -40%
 }
 
+/* Text Selection */
+::selection {
+  background: rgba(255,255,255,0.4);
+}
+
+::-moz-selection{
+  background: rgba(255,255,255,0.4);
+}
+
+::-webkit-selection {
+  background: rgba(255,255,255,0.4);
+}
+
 /* Nav buttons */
 #nav-left, #nav-right {
   -webkit-transition: all ease-out .3s;
@@ -98,7 +109,7 @@ body {
   position: fixed;
   top: 0;
   height: 100%;
-  width: 2.5%;
+  width: 3%;
   cursor: pointer;
   z-index: 10;
 }
@@ -137,59 +148,6 @@ body {
   font-size: 1.2em;
 }
 
-/* Block locations */
-.n1 {
-  top: 0;
-  left: 1%;
-  margin: 0
-}
-
-.n2 {
-  top: 0;
-  left: 50%;
-  margin: 0 0 0 -15%
-}
-
-.n3 {
-  top: 0;
-  left: 99%;
-  margin: 0 0 0 -30%
-}
-
-.n4 {
-  top: 33.33333%;
-  left: 1%
-}
-
-.n5 {
-  margin: 0 0 0 -15%;
-  top: 33.33333%;
-  left: 50%
-}
-
-.n6 {
-  top: 33.33333%;
-  left: 99%;
-  margin: 0 0 0 -30%
-}
-
-.n7 {
-  top: 66.66666%;
-  left: 1%
-}
-
-.n8 {
-  top: 66.66666%;
-  left: 50%;
-  margin: 0 0 0 -15%
-}
-
-.n9 {
-  top: 66.66666%;
-  left: 99%;
-  margin: 0 0 0 -30%
-}
-
 /* Main block style */
 .tabbed-interface>div {
   margin: 0;
@@ -210,48 +168,19 @@ body {
 @media screen and (max-height: 568px) {
   .tabbed-interface ul li p {
     font-size: 1em;
-    top: 58%
   }
 
   .tabbed-interface ul li a span {
     font-size: 2.3em;
-    top: 22%
   }
 }
 
 @media screen and (max-height: 341px) {
   .tabbed-interface ul li p {
     font-size: 1em;
-    top: 67%
   }
 
   .tabbed-interface ul li a span {
     font-size: 2.3em;
-    top: 6%
-  }
-}
-
-/* Resize margins */
-@media screen and (max-width: 1000px) {
-  .tabbed-interface ul {
-    margin: 0 0 0 -46%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .tabbed-interface ul {
-    margin: 0 0 0 -47%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .tabbed-interface ul {
-    margin: 0 0 0 -48%;
-  }
-}
-
-@media screen and (max-width: 250px) {
-  .tabbed-interface ul {
-    margin: 0 0 0 -49%;
   }
 }
