@@ -29,7 +29,6 @@ body {
   height: 90%;
   margin: 0 auto;
   margin-top: 2.5%;
-  overflow: hidden;
 }
 
 .tabbed-interface div {
@@ -43,8 +42,8 @@ body {
 .tabbed-interface div a {
   display: inline-block;
   text-decoration: none;
-  height: 95%;
-  width: 95%;
+  height: 92%;
+  width: 96%;
   margin-top: 2.5%;
   position: relative;
   color: #FFF;
@@ -58,6 +57,12 @@ body {
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  background: rgba(0,0,0,0.4);
+}
+
+.tabbed-interface div a:hover {
+  background: rgba(0,0,0,0.6);
+  font-size: 1.2em;
 }
 
 .tabbed-interface div p {
@@ -111,6 +116,13 @@ body {
   width: 3%;
   cursor: pointer;
   z-index: 10;
+  background: rgba(0,0,0,0.4);
+}
+
+#nav-left:hover,
+#nav-right:hover {
+  background: rgba(0,0,0,0.6);
+  font-size: 1.2em;
 }
 
 #nav-left span,
@@ -137,17 +149,6 @@ body {
 #nav-right span {
   right: 30%;
 }
-
-/* Block colors */
-
-.block, .tabbed-interface div a {
-  background: rgba(0,0,0,0.4);
-}
-
-.block:hover, .tabbed-interface div a:hover {
-  background: rgba(0,0,0,0.6);
-  font-size: 1.2em;
-} 
 
 /* Resize text */
 
