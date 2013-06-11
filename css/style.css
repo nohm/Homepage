@@ -174,29 +174,3 @@ body {
     top: 6%;
   }
 }
-
-/* Resize margins */
-
-@media screen and (max-width: 1000px) {
-  .tabbed-interface ul {
-    margin: 0 0 0 -46%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .tabbed-interface ul {
-    margin: 0 0 0 -47%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .tabbed-interface ul {
-    margin: 0 0 0 -48%;
-  }
-}
-
-@media screen and (max-width: 250px) {
-  .tabbed-interface ul {
-    margin: 0 0 0 -49%;
-  }
-}
