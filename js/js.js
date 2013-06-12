@@ -36,7 +36,6 @@ $(document).ready(function() {
 	// It picks up all object with class 'tabbed-interface' and ids starting with 'page'
 	var pages = $('.tabbed-interface[id^=page]');
 	var shownPage = 1;
-	var fadespeed = 'slow';
 
 	// No/one pages? Hide the nav.
 	if (pages.length <= 1) {
@@ -61,8 +60,8 @@ $(document).ready(function() {
 
 	// Rotates the pages from > to
 	function rotate(to) {
-		$('#' + pages[shownPage - 1].id).fadeOut(fadespeed, function() {
-			$('#' + pages[to - 1].id).fadeIn();
+		$('#' + pages[shownPage - 1].id).fadeOut(config.fadespeed, function() {
+			$('#' + pages[to - 1].id).fadeIn(config.fadespeed);
 		});
 		shownPage = to;
 	}

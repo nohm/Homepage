@@ -1,6 +1,7 @@
 // Add files to img/bg/ and add the filenames
 // Add tabs here (max 9 per page) to show on the page
 var config = {
+	"fadespeed": "slow",
 	"images": [
 		'1.jpg',
 		'2.jpg',
@@ -11,7 +12,8 @@ var config = {
 		'7.jpg',
 		'8.jpg',
 		'9.jpg',
-		'10.jpg'
+		'10.jpg',
+		'11.jpg'
 	],
 	"pages": [
 		{
