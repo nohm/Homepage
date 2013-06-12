@@ -129,7 +129,7 @@ body {
 }
 
 #nav-left span {
-  left: 30%;
+  left: 5%;
 }
 
 #nav-right {
@@ -137,7 +137,7 @@ body {
 }
 
 #nav-right span {
-  right: 30%;
+  right: 5%;
 }
 
 /* Resize text */
