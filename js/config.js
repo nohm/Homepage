@@ -21,47 +21,47 @@ var config = {
 			"gridY": 3,
 			"blocks": [
 				{
-					"icon": "fontawesome-suitcase",
+					"icon": "icon-suitcase",
 					"label": "School",
 					"link": "http://leren.saxion.nl/"
 				},
 				{
-					"icon": "fontawesome-envelope",
+					"icon": "icon-envelope",
 					"label": "Mail",
 					"link": "https://mail.google.com/mail/?shva=1#inbox"
 				},
 				{
-					"icon": "fontawesome-calendar",
+					"icon": "icon-calendar",
 					"label": "Calendar",
 					"link": "https://www.google.com/calendar/render?tab=mc&amp;pli=1"
 				},
 				{
-					"icon": "fontawesome-rss",
+					"icon": "icon-rss",
 					"label": "TT-RSS",
 					"link": "http://localhost/tt-rss"
 				},
 				{
-					"icon": "fontawesome-github",
+					"icon": "icon-github",
 					"label": "GitHub",
 					"link": "https://github.com/"
 				},
 				{
-					"icon": "fontawesome-map-marker",
+					"icon": "icon-map-marker",
 					"label": "GPS-Buddy",
 					"link": "http://gps-buddy.com/"
 				},
 				{
-					"icon": "fontawesome-list-alt",
+					"icon": "icon-list-alt",
 					"label": "Nu.nl",
 					"link": "http://nu.nl/"
 				},
 				{
-					"icon": "fontawesome-bar-chart",
+					"icon": "icon-bar-chart",
 					"label": "Hacker News",
 					"link": "https://news.ycombinator.com/"
 				},
 				{
-					"icon": "fontawesome-laptop",
+					"icon": "icon-laptop",
 					"label": "GW2Guru",
 					"link": "http://guildwars2guru.com/"
 				}
@@ -72,22 +72,22 @@ var config = {
 			"gridY": 2,
 			"blocks": [
 				{
-					"icon": "fontawesome-laptop",
+					"icon": "icon-laptop",
 					"label": "Technology",
 					"link": "http://4chan.org/g/"
 				},
 				{
-					"icon": "fontawesome-picture",
+					"icon": "icon-picture",
 					"label": "Wallpapers / General",
 					"link": "http://4chan.org/wg/"
 				},
 				{
-					"icon": "fontawesome-play",
+					"icon": "icon-play",
 					"label": "Last.fm",
 					"link": "http://last.fm"
 				},
 				{
-					"icon": "fontawesome-film",
+					"icon": "icon-film",
 					"label": "Tinychat",
 					"link": "http://tinychat.com/haremchat"
 				}
