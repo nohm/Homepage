@@ -13,7 +13,8 @@ var config = {
 		'8.jpg',
 		'9.jpg',
 		'10.jpg',
-		'11.jpg'
+		'11.jpg',
+		'12.jpg'
 	],
 	"pages": [
 		{

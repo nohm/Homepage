@@ -5,21 +5,14 @@ $(document).ready(function() {
 	for (var i = 0; i < config.pages.length; i++) {
 		var page = config.pages[i];
 		var pageId = 'page' + (i + 1);
-		$('body').append('<div class="tabbed-interface" id="' + pageId + '"></div>');
+		$('body').append('<div class="page" id="' + pageId + '"></div>');
 
 		for (var j = 0; j < page.blocks.length; j++) {
 			var block = page.blocks[j];
 			var blockId = pageId + '_block' + (j + 1);
-			$('#' + pageId).append(
-				'<div id="' + blockId + '">' + 
-					'<a href="' + block.link + '">' +
-						'<span class="' + block.icon + '"></span>' +
-						'<p>' + block.label + '</p>'+
-					'</a>' +
-				'</div>'
-			);
+			$('#' + pageId).append('<div><a href="' + block.link + '"><span class="' + block.icon + '"></span><p>' + block.label + '</p></a></div>');
 			// Set the height/width according to the config
-			$('#' + blockId).css({
+			$('#' + pageId + ' div').css({
 				'height': (100 / page.gridY) + '%',
 				'width': (100 / page.gridX) + '%'
 			});
@@ -34,7 +27,7 @@ $(document).ready(function() {
 
 	// Page rotation
 	// It picks up all object with class 'tabbed-interface' and ids starting with 'page'
-	var pages = $('.tabbed-interface[id^=page]');
+	var pages = $('.page[id^=page]');
 	var shownPage = 1;
 
 	// No/one pages? Hide the nav.

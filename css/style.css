@@ -22,20 +22,20 @@ body {
 
 /* Tab style */
 
-.tabbed-interface {
+.page {
   width: 90%;
   height: 90%;
   margin: 0 auto;
   margin-top: 2.5%;
 }
 
-.tabbed-interface div {
+.page div {
   text-align: center;
   float: left; 
   position: relative;
 }
 
-.tabbed-interface div a {
+.page div a {
   display: inline-block;
   text-decoration: none;
   height: 92%;
@@ -55,11 +55,11 @@ body {
   background: rgba(0,0,0,0.4);
 }
 
-.tabbed-interface div a:hover {
+.page div a:hover {
   background: rgba(0,0,0,0.6);
 }
 
-.tabbed-interface div p {
+.page div p {
   text-decoration: none;
   color: #FFF;
   font-family: 'Merriweather Sans', sans-serif;
@@ -73,7 +73,7 @@ body {
   margin: 0 0 0 -50%;
 }
 
-.tabbed-interface div a span {
+.page div a span {
   position: absolute;
   top: 32%;
   left: 50%;
@@ -141,32 +141,32 @@ body {
 }
 
 /* Resize text */
-.tabbed-interface div a:hover,
+.page div a:hover,
 #nav-left:hover,
 #nav-right:hover,
-.tabbed-interface div a span,
+.page div a span,
 #nav-left span,
 #nav-right span {
   font-size: 1.7em;
 }
 
-.tabbed-interface div a span,
+.page div a span,
 #nav-left span,
 #nav-right span {
   font-size: 2em;
 }
 
 @media screen and (max-width: 801px) {
-  .tabbed-interface div a:hover,
+  .page div a:hover,
   #nav-left:hover,
   #nav-right:hover,
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 1.7em;
   }
 
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 2em;
@@ -174,16 +174,16 @@ body {
 }
 
 @media screen and (max-width: 568px) {
-  .tabbed-interface div a:hover,
+  .page div a:hover,
   #nav-left:hover,
   #nav-right:hover,
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 1.5em;
   }
 
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 1.8em;
@@ -191,16 +191,16 @@ body {
 }
 
 @media screen and (max-width: 341px) {
-  .tabbed-interface div a:hover,
+  .page div a:hover,
   #nav-left:hover,
   #nav-right:hover,
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 1.2em;
   }
 
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 1.4em;
@@ -208,51 +208,51 @@ body {
 }
 
 @media screen and (max-height: 568px) {
-  .tabbed-interface div a:hover,
+  .page div a:hover,
   #nav-left:hover,
   #nav-right:hover,
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 1.5em;
   }
 
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 1.8em;
   }
 
-  .tabbed-interface div a span {
+  .page div a span {
     top: 30%;
   }
 
-  .tabbed-interface div a p {
+  .page div a p {
     top: 55%;
   }
 }
 
 @media screen and (max-height: 341px) {
-  .tabbed-interface div a:hover,
+  .page div a:hover,
   #nav-left:hover,
   #nav-right:hover,
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 1.2em;
   }
 
-  .tabbed-interface div a span,
+  .page div a span,
   #nav-left span,
   #nav-right span {
     font-size: 1.4em;
   }
 
-  .tabbed-interface div a span {
+  .page div a span {
     top: 15%;
   }
 
-  .tabbed-interface div a p {
+  .page div a p {
     top: 50%;
   }
 }
