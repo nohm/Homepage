@@ -129,7 +129,7 @@ body {
 }
 
 #nav-left span {
-  left: 5%;
+  left: 10%;
 }
 
 #nav-right {
@@ -137,16 +137,13 @@ body {
 }
 
 #nav-right span {
-  right: 5%;
+  right: 10%;
 }
 
 /* Resize text */
 .page div a:hover,
 #nav-left:hover,
-#nav-right:hover,
-.page div a span,
-#nav-left span,
-#nav-right span {
+#nav-right:hover {
   font-size: 1.7em;
 }
 
@@ -159,10 +156,7 @@ body {
 @media screen and (max-width: 801px) {
   .page div a:hover,
   #nav-left:hover,
-  #nav-right:hover,
-  .page div a span,
-  #nav-left span,
-  #nav-right span {
+  #nav-right:hover {
     font-size: 1.7em;
   }
 
@@ -176,10 +170,7 @@ body {
 @media screen and (max-width: 568px) {
   .page div a:hover,
   #nav-left:hover,
-  #nav-right:hover,
-  .page div a span,
-  #nav-left span,
-  #nav-right span {
+  #nav-right:hover {
     font-size: 1.5em;
   }
 
@@ -193,10 +184,7 @@ body {
 @media screen and (max-width: 341px) {
   .page div a:hover,
   #nav-left:hover,
-  #nav-right:hover,
-  .page div a span,
-  #nav-left span,
-  #nav-right span {
+  #nav-right:hover {
     font-size: 1.2em;
   }
 
@@ -210,10 +198,7 @@ body {
 @media screen and (max-height: 568px) {
   .page div a:hover,
   #nav-left:hover,
-  #nav-right:hover,
-  .page div a span,
-  #nav-left span,
-  #nav-right span {
+  #nav-right:hover {
     font-size: 1.5em;
   }
 
@@ -235,10 +220,7 @@ body {
 @media screen and (max-height: 341px) {
   .page div a:hover,
   #nav-left:hover,
-  #nav-right:hover,
-  .page div a span,
-  #nav-left span,
-  #nav-right span {
+  #nav-right:hover {
     font-size: 1.2em;
   }
 
